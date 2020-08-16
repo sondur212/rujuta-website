@@ -7,9 +7,15 @@ import { ViewRoute } from '../../components/navigation/util';
 import WorkView from '../../views/work/work-view';
 import AboutView from '../../views/about/about-view';
 import ResumeView from '../../views/resume/resume-view';
+import MagazineView from '../../views/magazine/magazine-view';
 
 export function pageRoutes() {
-  return [ViewRoute(WorkView), ViewRoute(AboutView), ViewRoute(ResumeView)];
+  return [
+    ViewRoute(WorkView),
+    ViewRoute(AboutView),
+    ViewRoute(ResumeView),
+    ViewRoute(MagazineView),
+  ];
 }
 
 const SideBarArea = () => {

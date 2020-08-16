@@ -26,6 +26,7 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/i,
+        exclude: /node_modules/,
         use: [
           // Creates `style` nodes from JS strings
           'style-loader',
@@ -36,8 +37,16 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: ['file-loader'],
+        test: /\.(png|jpg|svg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              name: 'img/[name]-[hash].[ext]',
+            },
+          },
+        ],
       },
     ],
   },

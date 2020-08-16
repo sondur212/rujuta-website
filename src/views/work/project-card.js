@@ -7,7 +7,7 @@ const ProjectCard = ({
   place,
   card: { image, title, details /*cardlink, tags*/ },
 }) => {
-  const image_path = `assets/images/${image}`;
+  const image_path = `./assets/images/${image}`;
   return (
     <div className="project__card">
       <div className={classnames('project__main', place)}>
