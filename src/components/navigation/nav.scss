@@ -1,7 +1,4 @@
-$background__color: #efe7e3;
 .wrapper {
-  background-color: $background__color;
-
   .left-nav {
     grid-column: 1/2;
     display: grid;
@@ -54,6 +51,6 @@ $background__color: #efe7e3;
     border-style: solid;
     border-width: 0px 0px 0.5px;
     border-color: #5c5c5c;
-    background-color: $background__color;
+    background-color: #efe7e3;
   }
 }

@@ -6,10 +6,10 @@ import SideBarItem from './sidebar-item';
 import { ViewRoute } from '../../components/navigation/util';
 import WorkView from '../../views/work/work-view';
 import AboutView from '../../views/about/about-view';
-import MagazineView from '../../views/magazine/magazine-view';
+import ResumeView from '../../views/resume/resume-view';
 
 export function pageRoutes() {
-  return [ViewRoute(WorkView), ViewRoute(AboutView), ViewRoute(MagazineView)];
+  return [ViewRoute(WorkView), ViewRoute(AboutView), ViewRoute(ResumeView)];
 }
 
 const SideBarArea = () => {
@@ -18,7 +18,7 @@ const SideBarArea = () => {
       <SideBarMenu>
         <SideBarItem label=" Work" component={WorkView} />
         <SideBarItem label=" Email" component={AboutView} />
-        <SideBarItem label=" Resume" component={AboutView} />
+        <SideBarItem label=" Resume" component={ResumeView} />
       </SideBarMenu>
     </SideBar>
   );
