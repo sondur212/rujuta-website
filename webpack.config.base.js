@@ -44,6 +44,7 @@ module.exports = {
             options: {
               limit: 8192,
               name: 'img/[name]-[hash].[ext]',
+              publicPath: 'dist',
             },
           },
         ],
