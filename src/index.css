@@ -1,0 +1,26 @@
+html {
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+body {
+  overflow: scroll;
+  margin-right: 0px;
+  margin-left: 0px;
+  clear: none;
+  background-color: #fff;
+
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  min-height: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+}
+
+*,
+*:after,
+*::before {
+  box-sizing: border-box;
+}

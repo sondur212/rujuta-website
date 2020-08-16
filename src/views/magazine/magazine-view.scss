@@ -1,0 +1,48 @@
+.magazine-view {
+  margin: 0 8vw;
+}
+h1.magazine-header {
+  padding-top: 164px;
+  font-family: 'PT Serif', serif;
+}
+
+.magazine-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 12vw);
+  grid-row-gap: 10vh;
+}
+
+.mag-image-container:nth-of-type(1) {
+  grid-column: 1 / span 4;
+  grid-row: 1/2;
+}
+
+.mag-image-container:nth-of-type(2) {
+  grid-column: 4 / span 4;
+  grid-row: 2/3;
+}
+
+.mag-image-container:nth-of-type(3) {
+  grid-column: 1 / span 4;
+  grid-row: 3/4;
+}
+
+.mag-image-container:nth-of-type(4) {
+  grid-column: 4 / span 4;
+  grid-row: 4/5;
+}
+
+.mag-image-container:nth-of-type(5) {
+  grid-column: 1 / span 4;
+  grid-row: 5/6;
+}
+
+.mag-image-container:nth-of-type(6) {
+  grid-column: 4 / span 4;
+  grid-row: 6/7;
+}
+
+.mag-image {
+  display: block;
+  width: 100%;
+}
