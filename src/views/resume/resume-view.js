@@ -4,7 +4,7 @@ import './resume-view.scss';
 const ResumeView = () => {
   return (
     <div className="resume-view">
-      <embed src="assets/Rujuta_Resume.pdf" width="800px" height="1200px" />
+      <embed src="assets/Rujuta_Resume.pdf" width="800px" height="1000px" />
     </div>
   );
 };
