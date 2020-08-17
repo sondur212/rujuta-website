@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './magazine-view.scss';
 
 const MagImage = ({ image }) => {
-  const image_path = `./assets/images/magazinepictures/${image}`;
+  const image_path = `assets/images/magazinepictures/${image}`;
   return (
     <div className="mag-image-container">
       <img className="mag-image" alt="magazine page" src={image_path} />
