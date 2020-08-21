@@ -6,6 +6,8 @@ import SideBarItem from './sidebar-item';
 import { ViewRoute } from '../../components/navigation/util';
 import WorkView from '../../views/work/work-view';
 import AboutView from '../../views/about/about-view';
+import KannadaView from '../../views/kannada/kannada-view';
+import ExpressiveView from '../../views/expressive/expressive-view';
 import ResumeView from '../../views/resume/resume-view';
 import MagazineView from '../../views/magazine/magazine-view';
 
@@ -15,6 +17,8 @@ export function pageRoutes() {
     ViewRoute(AboutView),
     ViewRoute(ResumeView),
     ViewRoute(MagazineView),
+    ViewRoute(KannadaView),
+    ViewRoute(ExpressiveView),
   ];
 }
 

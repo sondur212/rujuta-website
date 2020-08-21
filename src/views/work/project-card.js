@@ -1,18 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import './project-content.scss';
 
 const ProjectCard = ({
   place,
-  card: { image, title, details /*cardlink, tags*/ },
+  card: { image, title, details, cardlink /*, tags*/ },
 }) => {
   const image_path = `assets/images/${image}`;
   return (
     <div className="project__card">
       <div className={classnames('project__main', place)}>
         <div className="card__image-container">
-          <img className="card__image" alt="project desc" src={image_path} />
+          <Link className="page-link" to={cardlink}>
+            <img className="card__image" alt="project desc" src={image_path} />
+          </Link>
         </div>
         {/* <ProjectTitle title={title} tags={tags} cardlink={cardlink} /> */}
       </div>

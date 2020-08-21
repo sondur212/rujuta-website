@@ -5,7 +5,7 @@ import './project-content.scss';
 const cardlist = [
   {
     image: 'kannada.png',
-    cardlink: '/magazine',
+    cardlink: '/kannada',
     tags: ['Layout Design', 'Magazine'],
     title: 'Learning Kannada Through Virtual Reality',
     details:
@@ -21,7 +21,7 @@ const cardlist = [
   },
   {
     image: 'hi-cloth.png',
-    cardlink: '/hicloth',
+    cardlink: '/expressive',
     tags: ['Mobile App'],
     title: 'An Expressive Cloth',
     details:
