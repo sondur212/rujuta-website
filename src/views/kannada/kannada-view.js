@@ -8,7 +8,7 @@ const KannadaView = () => {
         <img
           className="kannada-image-content"
           alt="learning process for kannada"
-          src="assets/images/kannada-content.jpg"
+          src="assets/images/kannadawebsite3.png"
         />
       </div>
     </div>

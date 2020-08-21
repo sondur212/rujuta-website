@@ -10,6 +10,8 @@ import KannadaView from '../../views/kannada/kannada-view';
 import ExpressiveView from '../../views/expressive/expressive-view';
 import ResumeView from '../../views/resume/resume-view';
 import MagazineView from '../../views/magazine/magazine-view';
+import MemphisView from '../../views/memphis/memphis-view';
+import AryaView from '../../views/arya/arya-view';
 
 export function pageRoutes() {
   return [
@@ -19,6 +21,8 @@ export function pageRoutes() {
     ViewRoute(MagazineView),
     ViewRoute(KannadaView),
     ViewRoute(ExpressiveView),
+    ViewRoute(MemphisView),
+    ViewRoute(AryaView),
   ];
 }
 

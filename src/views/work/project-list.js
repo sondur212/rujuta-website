@@ -13,7 +13,7 @@ const cardlist = [
   },
   {
     image: 'arya.jpg',
-    cardlink: '/facebook',
+    cardlink: '/arya',
     tags: ['Design System', 'Internal Tool'],
     title: 'Helping Students In Course Signups',
     details:
@@ -29,7 +29,7 @@ const cardlist = [
   },
   {
     image: 'magazinepictures/creativecrush.jpg',
-    cardlink: '/time',
+    cardlink: '/collage',
     tags: ['Data Visualization'],
     title: 'Collage - Magazine Design',
     details:
@@ -37,7 +37,7 @@ const cardlist = [
   },
   {
     image: 'memphis.png',
-    cardlink: '/homeprice',
+    cardlink: '/memphis',
     tags: ['UX Research'],
     title: 'Memphis - An Animated Infograph',
     details:

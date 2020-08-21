@@ -1,0 +1,28 @@
+.memphis-view {
+  padding-top: 8rem;
+}
+
+.memphis-header {
+  margin-top: 5rem;
+  .memphis-abstract {
+    font-size: 1.5rem;
+    color: #d34f4e;
+    font-weight: 700;
+  }
+}
+.memphis-header p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  color: #596374;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.memphis-gif-wrap {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 40vw;
+  }
+}

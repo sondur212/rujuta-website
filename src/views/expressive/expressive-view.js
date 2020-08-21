@@ -59,6 +59,15 @@ const ExpressiveView = () => {
             <source src="assets/videos/belt-video.mp4" type="video/mp4" />
           </video>
         </div>
+        <p className="captions left">
+          We tried representing some emotions with a ball as our object. Since
+          it is such a simple object we felt that it would force us to focus
+          more on the movement and form.
+        </p>
+        <p className="captions right">
+          We also tried to express emotions using a belt as an object, as it
+          gave us a different type of form to work with.
+        </p>
       </div>
     </div>
   );

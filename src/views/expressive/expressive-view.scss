@@ -51,7 +51,7 @@
   // margin: 0 3rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 15vw);
+  grid-template-rows: repeat(10, 15vw);
   grid-gap: 4rem;
 }
 
@@ -83,7 +83,9 @@
   height: 100%;
   object-fit: cover;
 }
-
+.frame-video-wrap {
+  overflow: hidden;
+}
 .frame-video-wrap.left {
   grid-column: 1 / span 2;
   grid-row: 5 / span 2;
@@ -92,4 +94,19 @@
 .frame-video-wrap.right {
   grid-column: 3 / span 2;
   grid-row: 5 / span 2;
+}
+
+.captions {
+  font-size: 1.25rem;
+  color: #596374;
+  font-family: 'Nunito Sans';
+}
+.captions.left {
+  grid-column: 1 / span 2;
+  grid-row: 7 / span 2;
+}
+
+.captions.right {
+  grid-column: 3 / span 2;
+  grid-row: 7 / span 2;
 }

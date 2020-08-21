@@ -37,6 +37,6 @@ const MagazineView = () => {
   );
 };
 
-MagazineView.Url = '/magazine';
+MagazineView.Url = '/collage';
 
 export default MagazineView;
