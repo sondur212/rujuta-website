@@ -13,7 +13,7 @@ const ProjectCard = ({
     <div className="project__card">
       <div className={classnames('project__main', place)}>
         <div className="card__image-container">
-          <Link className="page-link" to={cardlink}>
+          <Link className="page-link" to={{ pathname: cardlink }}>
             <img className="card__image" alt="project desc" src={image_path} />
           </Link>
         </div>

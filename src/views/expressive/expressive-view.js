@@ -50,12 +50,12 @@ const ExpressiveView = () => {
           />
         </div>
         <div className="frame-video-wrap left">
-          <video loop autoplay="autoplay" muted>
+          <video loop autoPlay="autoplay" muted>
             <source src="assets/videos/ball-emotions.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="frame-video-wrap right">
-          <video loop autoplay="autoplay" muted>
+          <video loop autoPlay="autoplay" muted>
             <source src="assets/videos/belt-video.mp4" type="video/mp4" />
           </video>
         </div>
