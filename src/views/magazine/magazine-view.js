@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './magazine-view.scss';
-import collage from 'assets/images/magazinepictures/collagecovermockup.jpg';
-import content from 'assets/images/magazinepictures/contentsmockup.jpg';
-import irisapfel from 'assets/images/magazinepictures/irisapfelmockup.jpg';
-import homekitchen from 'assets/images/magazinepictures/homekitchenmockup.jpg';
-import interval from 'assets/images/magazinepictures/interviewquestions.jpg';
-import burningman from 'assets/images/magazinepictures/burningmanmockup.jpg';
+import collage from './../../../assets/images/magazinepictures/collagecovermockup.jpg';
+import content from './../../../assets/images/magazinepictures/contentsmockup.jpg';
+import irisapfel from './../../../assets/images/magazinepictures/irisapfelmockup.jpg';
+import homekitchen from './../../../assets/images/magazinepictures/homekitchenmockup.jpg';
+import interval from './../../../assets/images/magazinepictures/interviewquestions.jpg';
+import burningman from './../../../assets/images/magazinepictures/burningmanmockup.jpg';
 
 const MagImage = ({ image }) => {
   return (

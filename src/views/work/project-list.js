@@ -1,11 +1,11 @@
 import React from 'react';
 import ProjectCard from './project-card';
 import './project-content.scss';
-import kannadaImg from 'assets/images/kannada.png';
-import aryaImg from 'assets/images/arya.jpg';
-import hiclothImg from 'assets/images/hi-cloth.png';
-import creativecrushImg from 'assets/images/magazinepictures/creativecrush.jpg';
-import memphisImg from 'assets/images/memphis.png';
+import kannadaImg from './../../../assets/images/kannada.png';
+import aryaImg from './../../../assets/images/arya.jpg';
+import hiclothImg from './../../../assets/images/hi-cloth.png';
+import creativecrushImg from './../../../assets/images/magazinepictures/creativecrush.jpg';
+import memphisImg from './../../../assets/images/memphis.png';
 
 const cardlist = [
   {

@@ -1,6 +1,6 @@
 import React from 'react';
 import './kannada-view.scss';
-import kannadaWebsite from 'assets/images/kannadawebsite3.png';
+import kannadaWebsite from './../../../assets/images/kannadawebsite3.png';
 
 const KannadaView = () => {
   return (

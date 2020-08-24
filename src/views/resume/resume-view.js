@@ -1,6 +1,6 @@
 import React from 'react';
 import './resume-view.scss';
-import resume from 'assets/Rujuta_Resume.pdf';
+import resume from './../../../assets/Rujuta_Resume.pdf';
 
 const ResumeView = () => {
   return (

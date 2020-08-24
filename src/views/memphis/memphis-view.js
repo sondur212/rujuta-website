@@ -1,6 +1,6 @@
 import React from 'react';
 import './memphis-view.scss';
-import memphisslow from 'assets/images/memphis-slow-resized.gif';
+import memphisslow from './../../../assets/images/memphis-slow-resized.gif';
 
 const MemphisView = () => {
   return (

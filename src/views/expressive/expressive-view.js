@@ -1,11 +1,11 @@
 import React from 'react';
 import './expressive-view.scss';
 import hicloth from 'assets/images/hi-cloth.png';
-import expressive1 from 'assets/images/expressive-objects/1.jpg';
-import expressive2 from 'assets/images/expressive-objects/2.jpg';
-import expressive3 from 'assets/images/expressive-objects/3.png';
-import ballemotionsmov from 'assets/videos/ball-emotions.mp4';
-import beltvideo from 'assets/videos/belt-video.mp4';
+import expressive1 from './../../../assets/images/expressive-objects/1.jpg';
+import expressive2 from './../../../assets/images/expressive-objects/2.jpg';
+import expressive3 from './../../../assets/images/expressive-objects/3.png';
+import ballemotionsmov from './../../../assets/videos/ball-emotions.mp4';
+import beltvideo from './../../../assets/videos/belt-video.mp4';
 
 const ExpressiveView = () => {
   return (
