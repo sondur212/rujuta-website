@@ -37,16 +37,20 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|svg)$/,
+        test: /\.(pdf|png|jpg|svg|gif)$/,
         use: [
           {
-            loader: 'url-loader',
+            loader: 'file-loader',
             options: {
-              limit: 8192,
-              name: 'img/[name]-[hash].[ext]',
+              outputPath: 'images',
+              name: '[name].[ext]?[hash]',
             },
           },
         ],
+      },
+      {
+        test: /\.(mov|mp4)$/,
+        use: 'file-loader?name=videos/[name].[ext]',
       },
     ],
   },
@@ -62,3 +66,10 @@ module.exports = {
     },
   },
 };
+
+/*
+
+            options: {
+              limit: 8192,
+              name: 'img/[name]-[hash].[ext]',
+            },*/

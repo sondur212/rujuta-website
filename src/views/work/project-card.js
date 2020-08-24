@@ -8,13 +8,12 @@ const ProjectCard = ({
   place,
   card: { image, title, details, cardlink /*, tags*/ },
 }) => {
-  const image_path = `assets/images/${image}`;
   return (
     <div className="project__card">
       <div className={classnames('project__main', place)}>
         <div className="card__image-container">
           <Link className="page-link" to={{ pathname: cardlink }}>
-            <img className="card__image" alt="project desc" src={image_path} />
+            <img className="card__image" alt="project desc" src={image} />
           </Link>
         </div>
         {/* <ProjectTitle title={title} tags={tags} cardlink={cardlink} /> */}
@@ -30,8 +29,8 @@ const ProjectCard = ({
 ProjectCard.propTypes = {
   place: PropTypes.string.isRequired,
   card: PropTypes.shape({
+    image: PropTypes.object,
     title: PropTypes.string,
-    image: PropTypes.string,
     cardlink: PropTypes.string,
     anno: PropTypes.string,
     details: PropTypes.string,

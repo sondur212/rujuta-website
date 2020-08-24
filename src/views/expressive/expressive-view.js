@@ -1,5 +1,11 @@
 import React from 'react';
 import './expressive-view.scss';
+import hicloth from 'assets/images/hi-cloth.png';
+import expressive1 from 'assets/images/expressive-objects/1.jpg';
+import expressive2 from 'assets/images/expressive-objects/2.jpg';
+import expressive3 from 'assets/images/expressive-objects/3.png';
+import ballemotionsmov from 'assets/videos/ball-emotions.mp4';
+import beltvideo from 'assets/videos/belt-video.mp4';
 
 const ExpressiveView = () => {
   return (
@@ -10,7 +16,7 @@ const ExpressiveView = () => {
           <img
             className="expressive-image-content"
             alt="Expreessive cloth cover"
-            src="assets/images/hi-cloth.png"
+            src={hicloth}
           />
         </div>
       </div>
@@ -32,31 +38,22 @@ const ExpressiveView = () => {
       </div>
       <div className="expressive-framework-block">
         <div className="frame-image-wrap top">
-          <img
-            alt="framework Main"
-            src="assets/images/expressive-objects/1.jpg"
-          />
+          <img alt="framework Main" src={expressive1} />
         </div>
         <div className="frame-image-wrap left">
-          <img
-            alt="framework Details"
-            src="assets/images/expressive-objects/2.jpg"
-          />
+          <img alt="framework Details" src={expressive2} />
         </div>
         <div className="frame-image-wrap right">
-          <img
-            alt="framework Graph"
-            src="assets/images/expressive-objects/3.png"
-          />
+          <img alt="framework Graph" src={expressive3} />
         </div>
         <div className="frame-video-wrap left">
           <video loop autoPlay="autoplay" muted>
-            <source src="assets/videos/ball-emotions.mp4" type="video/mp4" />
+            <source src={ballemotionsmov} type="video/mp4" />
           </video>
         </div>
         <div className="frame-video-wrap right">
           <video loop autoPlay="autoplay" muted>
-            <source src="assets/videos/belt-video.mp4" type="video/mp4" />
+            <source src={beltvideo} type="video/mp4" />
           </video>
         </div>
         <p className="captions left">

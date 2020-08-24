@@ -1,10 +1,15 @@
 import React from 'react';
 import ProjectCard from './project-card';
 import './project-content.scss';
+import kannadaImg from 'assets/images/kannada.png';
+import aryaImg from 'assets/images/arya.jpg';
+import hiclothImg from 'assets/images/hi-cloth.png';
+import creativecrushImg from 'assets/images/magazinepictures/creativecrush.jpg';
+import memphisImg from 'assets/images/memphis.png';
 
 const cardlist = [
   {
-    image: 'kannada.png',
+    image: kannadaImg,
     cardlink: '/kannada',
     tags: ['Layout Design', 'Magazine'],
     title: 'Learning Kannada Through Virtual Reality',
@@ -12,7 +17,7 @@ const cardlist = [
       'Enriching the preview experience to facilitate conversation and create new feedback tools',
   },
   {
-    image: 'arya.jpg',
+    image: aryaImg,
     cardlink: '/arya',
     tags: ['Design System', 'Internal Tool'],
     title: 'Helping Students In Course Signups',
@@ -20,7 +25,7 @@ const cardlist = [
       'Leading the vision for a more collaborative and dynamic workspace, presented at BoxWorks 2017',
   },
   {
-    image: 'hi-cloth.png',
+    image: hiclothImg,
     cardlink: '/expressive',
     tags: ['Mobile App'],
     title: 'An Expressive Cloth',
@@ -28,7 +33,7 @@ const cardlist = [
       'Unifying a fragmented sharing experience across Box to increase collaboration and promote security',
   },
   {
-    image: 'magazinepictures/creativecrush.jpg',
+    image: creativecrushImg,
     cardlink: '/collage',
     tags: ['Data Visualization'],
     title: 'Collage - Magazine Design',
@@ -36,7 +41,7 @@ const cardlist = [
       'Leading the vision for a more collaborative and dynamic workspace, presented at BoxWorks 2017',
   },
   {
-    image: 'memphis.png',
+    image: memphisImg,
     cardlink: '/memphis',
     tags: ['UX Research'],
     title: 'Memphis - An Animated Infograph',

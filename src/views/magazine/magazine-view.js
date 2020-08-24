@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './magazine-view.scss';
+import collage from 'assets/images/magazinepictures/collagecovermockup.jpg';
+import content from 'assets/images/magazinepictures/contentsmockup.jpg';
+import irisapfel from 'assets/images/magazinepictures/irisapfelmockup.jpg';
+import homekitchen from 'assets/images/magazinepictures/homekitchenmockup.jpg';
+import interval from 'assets/images/magazinepictures/interviewquestions.jpg';
+import burningman from 'assets/images/magazinepictures/burningmanmockup.jpg';
 
 const MagImage = ({ image }) => {
-  const image_path = `assets/images/magazinepictures/${image}`;
   return (
     <div className="mag-image-container">
-      <img className="mag-image" alt="magazine page" src={image_path} />
+      <img className="mag-image" alt="magazine page" src={image} />
     </div>
   );
 };
@@ -17,12 +22,12 @@ MagImage.propTypes = {
 
 const MagazineView = () => {
   const images = [
-    'collagecovermockup.jpg',
-    'contentsmockup.jpg',
-    'irisapfelmockup.jpg',
-    'homekitchenmockup.jpg',
-    'interviewquestions.jpg',
-    'burningmanmockup.jpg',
+    collage,
+    content,
+    irisapfel,
+    homekitchen,
+    interval,
+    burningman,
   ];
 
   const imagelist = images.map((image, idx) => (

@@ -1,6 +1,6 @@
 module.exports = {
   setupFilesAfterEnv: ['<rootDir>/testSetup.js'],
   moduleNameMapper: {
-    '^.+\\.(css|less|scss)$': 'babel-jest',
+    '^.+\\.(jpg|ico|jpeg|png|svg|gif|pdf|mp4|css|less|scss)$': 'babel-jest',
   },
 };

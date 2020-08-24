@@ -1,5 +1,6 @@
 import React from 'react';
 import './memphis-view.scss';
+import memphisslow from 'assets/images/memphis-slow-resized.gif';
 
 const MemphisView = () => {
   return (
@@ -13,10 +14,7 @@ const MemphisView = () => {
         <p>Team members: Rujuta Sondur and Akriti Sharma</p>
       </div>
       <div className="memphis-gif-wrap">
-        <img
-          src="assets/images/memphis-slow-resized.gif"
-          alt="Memphis Typeface"
-        />
+        <img src={memphisslow} alt="Memphis Typeface" />
       </div>
     </div>
   );

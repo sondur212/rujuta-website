@@ -1,5 +1,6 @@
 import React from 'react';
 import './kannada-view.scss';
+import kannadaWebsite from 'assets/images/kannadawebsite3.png';
 
 const KannadaView = () => {
   return (
@@ -8,7 +9,7 @@ const KannadaView = () => {
         <img
           className="kannada-image-content"
           alt="learning process for kannada"
-          src="assets/images/kannadawebsite3.png"
+          src={kannadaWebsite}
         />
       </div>
     </div>
