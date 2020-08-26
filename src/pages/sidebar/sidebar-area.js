@@ -5,7 +5,7 @@ import SideBarItem from './sidebar-item';
 // import { SidebarGroup } from './sidebar-group';
 import { ViewRoute } from '../../components/navigation/util';
 import WorkView from '../../views/work/work-view';
-import AboutView from '../../views/about/about-view';
+import EmailView from '../../views/about/about-view';
 import KannadaView from '../../views/kannada/kannada-view';
 import ExpressiveView from '../../views/expressive/expressive-view';
 import ResumeView from '../../views/resume/resume-view';
@@ -16,7 +16,7 @@ import AryaView from '../../views/arya/arya-view';
 export function pageRoutes() {
   return [
     ViewRoute(WorkView),
-    ViewRoute(AboutView),
+    ViewRoute(EmailView),
     ViewRoute(ResumeView),
     ViewRoute(MagazineView),
     ViewRoute(KannadaView),
@@ -31,8 +31,15 @@ const SideBarArea = () => {
     <SideBar>
       <SideBarMenu>
         <SideBarItem label=" Work" component={WorkView} />
-        <SideBarItem label=" Email" component={AboutView} />
+        {/*<SideBarItem label=" Email" component={EmailView} />*/}
         <SideBarItem label=" Resume" component={ResumeView} />
+        <li className="sidebar-item">
+          <div className="sidebar-item-content">
+            <a href="mailto:rujuta.sondur@gmail.com?subject=Say%20Hi%20to%20Rujuta!">
+              Email
+            </a>
+          </div>
+        </li>
       </SideBarMenu>
     </SideBar>
   );

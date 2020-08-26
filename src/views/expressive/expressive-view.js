@@ -1,5 +1,6 @@
 import React from 'react';
 import './expressive-view.scss';
+import ScrollToTop from './../../components/navigation/scroll-top';
 import hicloth from 'assets/images/hi-cloth.png';
 import expressive1 from './../../../assets/images/expressive-objects/1.jpg';
 import expressive2 from './../../../assets/images/expressive-objects/2.jpg';
@@ -10,6 +11,7 @@ import beltvideo from './../../../assets/videos/belt-video.mp4';
 const ExpressiveView = () => {
   return (
     <div className="expressive-view-wrapper">
+      <ScrollToTop />
       <div className="expressive-image-wrapper">
         <h1>An Expressive Cloth</h1>
         <div className="expressive-image-block">

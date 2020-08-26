@@ -29,7 +29,7 @@ const ProjectCard = ({
 ProjectCard.propTypes = {
   place: PropTypes.string.isRequired,
   card: PropTypes.shape({
-    image: PropTypes.object,
+    image: PropTypes.string,
     title: PropTypes.string,
     cardlink: PropTypes.string,
     anno: PropTypes.string,

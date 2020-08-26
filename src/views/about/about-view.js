@@ -1,9 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const AboutView = () => {
-  return <h1 style={{ paddingTop: '164px' }}>About View</h1>;
+const EmailView = () => {
+  return (
+    <div style={{ paddingTop: '120px' }}>
+      <Link to="mailto:rujuta.sondur@gmail.com?subject=Say%20Hi%20to%20Rujuta!">
+        <span>Email</span>
+      </Link>
+    </div>
+  );
 };
 
-AboutView.Url = '/about';
+EmailView.Url = '/email';
 
-export default AboutView;
+export default EmailView;
