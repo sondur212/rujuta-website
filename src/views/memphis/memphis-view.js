@@ -1,12 +1,10 @@
 import React from 'react';
-import ScrollToTop from './../../components/navigation/scroll-top';
 import './memphis-view.scss';
 import memphisslow from './../../../assets/images/memphis-slow-resized.gif';
 
 const MemphisView = () => {
   return (
     <div className="memphis-view">
-      <ScrollToTop />
       <div className="memphis-header">
         <p>
           <span className="memphis-abstract">Project Abstract: </span>This is an

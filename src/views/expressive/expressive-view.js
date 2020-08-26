@@ -1,17 +1,31 @@
 import React from 'react';
 import './expressive-view.scss';
-import ScrollToTop from './../../components/navigation/scroll-top';
 import hicloth from 'assets/images/hi-cloth.png';
-import expressive1 from './../../../assets/images/expressive-objects/1.jpg';
-import expressive2 from './../../../assets/images/expressive-objects/2.jpg';
-import expressive3 from './../../../assets/images/expressive-objects/3.png';
+import framework1 from './../../../assets/images/expressive-objects/1.jpg';
+import framework2 from './../../../assets/images/expressive-objects/2.jpg';
+import framework3 from './../../../assets/images/expressive-objects/3.png';
+
+import agitated from './../../../assets/images/expressivecloth/agitated.gif';
+import curious from './../../../assets/images/expressivecloth/curious.gif';
+import disgust from './../../../assets/images/expressivecloth/disgust.gif';
+import embarassed from './../../../assets/images/expressivecloth/embarassed.gif';
+import excited from './../../../assets/images/expressivecloth/excited.gif';
+import fear from './../../../assets/images/expressivecloth/fear.gif';
+
 import ballemotionsmov from './../../../assets/videos/ball-emotions.mp4';
 import beltvideo from './../../../assets/videos/belt-video.mp4';
 
 const ExpressiveView = () => {
+  const images = [agitated, curious, disgust, embarassed, excited, fear];
+
+  const imagelist = images.map((image, idx) => (
+    <div key={idx} className="gif-container">
+      <img alt="Expressive Graph" src={image} />
+    </div>
+  ));
+
   return (
     <div className="expressive-view-wrapper">
-      <ScrollToTop />
       <div className="expressive-image-wrapper">
         <h1>An Expressive Cloth</h1>
         <div className="expressive-image-block">
@@ -33,40 +47,42 @@ const ExpressiveView = () => {
           voice or screen interactions but will also rely on the form of the
           object for communication.
         </p>
-        <p>
-          We tried to narrow down a framework for some basic human emotions and
-          tried to identify some parameters of that emotion
-        </p>
       </div>
       <div className="expressive-framework-block">
-        <div className="frame-image-wrap top">
-          <img alt="framework Main" src={expressive1} />
-        </div>
-        <div className="frame-image-wrap left">
-          <img alt="framework Details" src={expressive2} />
-        </div>
-        <div className="frame-image-wrap right">
-          <img alt="framework Graph" src={expressive3} />
-        </div>
-        <div className="frame-video-wrap left">
+        <div className="frame-video-wrap top">
           <video loop autoPlay="autoplay" muted>
             <source src={ballemotionsmov} type="video/mp4" />
           </video>
         </div>
-        <div className="frame-video-wrap right">
-          <video loop autoPlay="autoplay" muted>
-            <source src={beltvideo} type="video/mp4" />
-          </video>
-        </div>
-        <p className="captions left">
+        <p className="videocaptions top">
           We tried representing some emotions with a ball as our object. Since
           it is such a simple object we felt that it would force us to focus
           more on the movement and form.
         </p>
-        <p className="captions right">
+        <div className="frame-video-wrap bottom">
+          <video loop autoPlay="autoplay" muted>
+            <source src={beltvideo} type="video/mp4" />
+          </video>
+        </div>
+        <p className="videocaptions bottom">
           We also tried to express emotions using a belt as an object, as it
           gave us a different type of form to work with.
         </p>
+
+        <div className="frame-image-wrap top">
+          <img alt="framework Main" src={framework1} />
+        </div>
+        <div className="frame-image-wrap left">
+          <img alt="framework Details" src={framework2} />
+        </div>
+        <div className="frame-image-wrap right">
+          <img alt="framework Graph" src={framework3} />
+        </div>
+        <p className="videocaptions emotions">
+          Finally, I then tried to express different emotions using a cloth as
+          my object, using what we had learned so far.
+        </p>
+        {imagelist}
       </div>
     </div>
   );

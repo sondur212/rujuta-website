@@ -1,14 +1,12 @@
 import React from 'react';
-import ScrollToTop from './../../components/navigation/scroll-top';
 import './arya-view.scss';
 import aryapage1 from './../../../assets/images/aryawebsiteedited.svg';
-import aryapage2 from './../../../assets/images/aryawebsite2.svg';
+import aryapage2 from './../../../assets/images/aryawebsite2.jpg';
 import aryamov from './../../../assets/videos/arya-course-signups.mp4';
 
 const AryaView = () => {
   return (
     <div className="arya-view">
-      <ScrollToTop />
       <div className="arya-image-wrap">
         <img src={aryapage1} alt="Arya Page 1" />
       </div>

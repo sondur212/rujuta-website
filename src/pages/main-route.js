@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ScrollToTop from './../components/navigation/scroll-top';
 import {
   HashRouter as Router,
   Switch,
@@ -12,6 +13,7 @@ import { pageRoutes } from './sidebar/sidebar-area';
 
 const Routing = () => (
   <Router>
+    <ScrollToTop />
     <Switch>
       <Route exact path="/" render={() => <Redirect to="/work" />} />
       <Route
