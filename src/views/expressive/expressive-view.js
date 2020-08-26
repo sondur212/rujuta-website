@@ -68,7 +68,11 @@ const ExpressiveView = () => {
           We also tried to express emotions using a belt as an object, as it
           gave us a different type of form to work with.
         </p>
-
+        <p className="videocaptions framework">
+          We tried to narrow down a framework for some basic human emotions and
+          tried to identify some parameters of that emotion. These included
+          speed, duration, direction and quality of movement
+        </p>
         <div className="frame-image-wrap top">
           <img alt="framework Main" src={framework1} />
         </div>
@@ -80,9 +84,20 @@ const ExpressiveView = () => {
         </div>
         <p className="videocaptions emotions">
           Finally, I then tried to express different emotions using a cloth as
-          my object, using what we had learned so far.
+          my object, using what we had learned so far -
         </p>
         {imagelist}
+        <h1>Final Thoughts</h1>
+        <p className="videocaptions final">
+          We displayed twelve of these animations at an exhibition in the
+          Rangoli Metro Station in Bangalore to find out people’s response to
+          the animations. We asked them what emotion they were able to recognise
+          from the animations and whether they could envision this method of
+          communication from objects like Alexa or Google Home in the future.
+          There were mixed answers from people about the emotions. Some emotions
+          like happy or sad were easy for people to understand, but the more
+          nuanced emotions like embarrassment were harder to identify.
+        </p>
       </div>
     </div>
   );
