@@ -7,6 +7,7 @@ import irisapfel from './../../../assets/images/magazinepictures/irisapfelmockup
 import homekitchen from './../../../assets/images/magazinepictures/homekitchenmockup.jpg';
 import interval from './../../../assets/images/magazinepictures/interviewquestions.jpg';
 import burningman from './../../../assets/images/magazinepictures/burningmanmockup.jpg';
+import ScrollToTop from './../../components/navigation/scroll-top';
 
 const MagImage = ({ image }) => {
   return (
@@ -35,8 +36,7 @@ const MagazineView = () => {
   ));
   return (
     <div className="magazine-view">
-      <h1 className="magazine-header">Magazine View</h1>
-
+      <ScrollToTop />
       <div className="magazine-wrapper">{imagelist}</div>
     </div>
   );
