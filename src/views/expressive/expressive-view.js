@@ -16,11 +16,21 @@ import ballemotionsmov from './../../../assets/videos/ball-emotions.mp4';
 import beltvideo from './../../../assets/videos/belt-video.mp4';
 
 const ExpressiveView = () => {
-  const images = [agitated, curious, disgust, embarassed, excited, fear];
+  //const images = [agitated, excited, embarassed, disgust, fear, curious];
 
-  const imagelist = images.map((image, idx) => (
+  const images = [
+    { title: 'Agitation', image: agitated },
+    { title: 'Excitement', image: excited },
+    { title: 'Embarassment', image: embarassed },
+    { title: 'Disgust', image: disgust },
+    { title: 'Fear', image: fear },
+    { title: 'Curiosity', image: curious },
+  ];
+
+  const imagelist = images.map((emotion, idx) => (
     <div key={idx} className="gif-container">
-      <img alt="Expressive Graph" src={image} />
+      <p>{emotion.title}</p>
+      <img alt="Expressive Graph" src={emotion.image} />
     </div>
   ));
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import './kannada-view.scss';
-import kannadaWebsite from './../../../assets/images/kannadawebsite3.png';
+import kannadafinal from './../../../assets/images/kannadafinal.jpg';
+import kannadamov from './../../../assets/videos/kannada-prototype.mov';
 
 const KannadaView = () => {
   return (
@@ -9,8 +10,13 @@ const KannadaView = () => {
         <img
           className="kannada-image-content"
           alt="learning process for kannada"
-          src={kannadaWebsite}
+          src={kannadafinal}
         />
+      </div>
+      <div className="kannada-intro-wrap">
+        <video loop autoPlay="autoplay" muted>
+          <source src={kannadamov} type="video/mp4" />
+        </video>
       </div>
     </div>
   );

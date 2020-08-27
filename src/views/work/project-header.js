@@ -11,10 +11,10 @@ const ProjectHeader = () => {
           target="_blank"
           className="heading-link"
         >
-          <span className="heading-colored">Rujuta Sondur </span>
+          <span className="heading-colored">Hi, I&apos;m Rujuta! </span>
         </a>
-        is a product designer who is exploring new designs and living in Pune.{' '}
         <br />
+        Here are some ideas that I have been exploring ... <br />
       </h1>
     </div>
   );

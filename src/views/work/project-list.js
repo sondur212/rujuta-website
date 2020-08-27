@@ -11,42 +11,42 @@ const cardlist = [
   {
     image: kannadaImg,
     cardlink: '/kannada',
-    tags: ['Layout Design', 'Magazine'],
+    tags: ['UX Design'],
     title: 'Learning Kannada Through Virtual Reality',
     details:
-      'Enriching the preview experience to facilitate conversation and create new feedback tools',
+      'Helping the daily commuters of the metro learn Kannada through Virtual Reality. The goal was to activate the metro station as a public space',
   },
   {
     image: aryaImg,
     cardlink: '/arya',
-    tags: ['Design System', 'Internal Tool'],
+    tags: ['UX Design'],
     title: 'Helping Students In Course Signups',
     details:
-      'Leading the vision for a more collaborative and dynamic workspace, presented at BoxWorks 2017',
+      'An interactive chatbot called "Arya" that guides students through their yearly course sign ups',
   },
   {
     image: hiclothImg,
     cardlink: '/expressive',
-    tags: ['Mobile App'],
+    tags: ['3D Animation'],
     title: 'An Expressive Cloth',
     details:
-      'Unifying a fragmented sharing experience across Box to increase collaboration and promote security',
+      'Can objects communicate through emotions? This project looks into how would look like',
   },
   {
     image: creativecrushImg,
     cardlink: '/collage',
-    tags: ['Data Visualization'],
+    tags: ['Visual Design'],
     title: 'Collage - Magazine Design',
     details:
-      'Leading the vision for a more collaborative and dynamic workspace, presented at BoxWorks 2017',
+      'A collection of articles that have been redesigned to do true justice to their content',
   },
   {
     image: memphisImg,
     cardlink: '/memphis',
-    tags: ['UX Research'],
+    tags: ['Visual Design', 'Animation'],
     title: 'Memphis - An Animated Infograph',
     details:
-      'Enriching the preview experience to facilitate conversation and create new feedback tools',
+      'An animated infograph detailing the suprisingly interesting history of the typeface - Memphis',
   },
 ];
 const ProjectList = () => {

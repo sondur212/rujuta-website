@@ -6,8 +6,17 @@ import './project-content.scss';
 
 const ProjectCard = ({
   place,
-  card: { image, title, details, cardlink /*, tags*/ },
+  card: { image, title, details, cardlink, tags },
 }) => {
+  const taglist = tags.map((tag, idx, arr) => {
+    return (
+      <span key={idx} className="tag-name">
+        {tag}
+        {idx != arr.length - 1 ? <span className="tag-name">, </span> : null}
+      </span>
+    );
+  });
+
   return (
     <div className="project__card">
       <div className={classnames('project__main', place)}>
@@ -20,7 +29,8 @@ const ProjectCard = ({
       </div>
       <div className={classnames('project__info', place)}>
         <div className={classnames('project__annotation', place)}>{title}</div>
-        <div className={classnames('project__details', place)}>{details}</div>
+        <p className={classnames('project__details', place)}>{details}</p>
+        <div className={classnames('project-tags', place)}>{taglist}</div>
       </div>
     </div>
   );

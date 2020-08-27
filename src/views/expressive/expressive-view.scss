@@ -42,7 +42,7 @@
   margin: 6rem 10rem 0 10rem;
   p {
     color: #596374;
-    font-family: 'Nunito Sans';
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 1.2rem;
     line-height: 1.5;
   }
@@ -54,7 +54,7 @@
   grid-template-columns: repeat(7, 8vw);
   grid-template-rows: repeat(25, 8vw);
   grid-column-gap: 3vw;
-  grid-row-gap: 3rem;
+  grid-row-gap: 6vw;
 }
 
 .frame-video-wrap {
@@ -107,7 +107,8 @@
 .videocaptions {
   font-size: 1.25rem;
   color: #596374;
-  font-family: 'Nunito Sans';
+  line-height: 1.5;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .frame-image-wrap img {
@@ -140,6 +141,14 @@
 }
 .gif-container {
   position: relative;
+  p {
+    position: absolute;
+    top: -20%;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #3a5999;
+  }
   img {
     position: absolute;
     top: 50%;

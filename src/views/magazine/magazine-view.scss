@@ -1,46 +1,51 @@
 .magazine-view {
   padding-top: 130px;
-  margin: 0 8vw;
-}
-h1.magazine-header {
-  padding-top: 164px;
-  font-family: 'PT Serif', serif;
+  margin: 0 5vw 0 4vw;
+  p.magazine-title {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-family: Meriweather;
+  }
 }
 
 .magazine-wrapper {
   display: grid;
-  grid-template-columns: repeat(7, 12vw);
-  grid-row-gap: 10vh;
+  grid-template-columns: repeat(7, 13vw);
+  grid-row-gap: 10vw;
 }
 
 .mag-image-container:nth-of-type(1) {
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 7;
   grid-row: 1/2;
 }
 
 .mag-image-container:nth-of-type(2) {
-  grid-column: 4 / span 4;
+  grid-column: 1 / span 7;
   grid-row: 2/3;
 }
 
 .mag-image-container:nth-of-type(3) {
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 7;
   grid-row: 3/4;
 }
 
 .mag-image-container:nth-of-type(4) {
-  grid-column: 4 / span 4;
+  grid-column: 1 / span 7;
   grid-row: 4/5;
 }
 
 .mag-image-container:nth-of-type(5) {
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 7;
   grid-row: 5/6;
 }
 
 .mag-image-container:nth-of-type(6) {
-  grid-column: 4 / span 4;
+  grid-column: 1 / span 7;
   grid-row: 6/7;
+}
+.mag-image-container:nth-of-type(7) {
+  grid-column: 1 / span 7;
+  grid-row: 7/8;
 }
 
 .mag-image-container img {

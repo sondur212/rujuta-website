@@ -61,15 +61,15 @@
 
 // sidebar item
 
-$link-color: #327e97;
+$link-color: #3a5999;
 
 .sidebar-item {
   padding: 1em;
   a {
     color: $link-color;
-    font-size: 0.875em;
-    font-family: Oswald, serif;
-    font-weight: 200;
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
     letter-spacing: 3px;
     text-decoration: none;
     text-transform: uppercase;
@@ -89,6 +89,6 @@ $link-color: #327e97;
 
 .active {
   a {
-    color: #ed8b00;
+    color: #ed0000;
   }
 }

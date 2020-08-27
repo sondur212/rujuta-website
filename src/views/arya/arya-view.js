@@ -1,8 +1,8 @@
 import React from 'react';
 import './arya-view.scss';
-import aryapage1 from './../../../assets/images/aryawebsiteedited.svg';
-import aryapage2 from './../../../assets/images/aryawebsite2.jpg';
-import aryamov from './../../../assets/videos/arya-course-signups.mp4';
+import aryapage1 from './../../../assets/images/aryafinal1.jpg';
+import aryapage2 from './../../../assets/images/aryafinal2.jpg';
+import aryamov from './../../../assets/videos/arya-prototype.mov';
 
 const AryaView = () => {
   return (
