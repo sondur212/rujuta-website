@@ -31,7 +31,6 @@
     flex-direction: column;
     border: 1px solid #ccc;
   }
-  $top-nav-height: 100px;
   /*  .sidebar > .sidebar-menu > li:hover > a > span
       top 1px */
 
@@ -42,10 +41,8 @@
     width: 100vw;
     z-index: 10;
     display: flex;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding: 0 40px;
+    margin: 0;
+    padding: 0 2.5rem;
     flex-direction: row-reverse;
     align-items: center;
     border-style: solid;

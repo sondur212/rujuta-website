@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './project-header.scss';
 
@@ -6,13 +7,9 @@ const ProjectHeader = () => {
   return (
     <div className="project-header">
       <h1 className="heading-1 colored">
-        <a
-          href="assets/Rujuta_Resume.pdf"
-          target="_blank"
-          className="heading-link"
-        >
+        <Link className="heading-link" to="/resume">
           <span className="heading-colored">Hi, I&apos;m Rujuta! </span>
-        </a>
+        </Link>
         <br />
         Here are some ideas that I have been exploring ... <br />
       </h1>
