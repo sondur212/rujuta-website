@@ -3,7 +3,7 @@
 .project-list {
   margin: 0 10vw;
   display: grid;
-  grid-row-gap: 10vh;
+  grid-row-gap: 6vw;
 }
 
 // project card
@@ -205,15 +205,18 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .project__card {
-    display: flex;
-    flex-direction: column;
-    margin: 0 2rem;
-    .project__info {
-      text-align: left;
-      margin: 2rem 0;
-      .project__annotation {
-        padding: 0;
+  .project-list {
+    margin: 0 4vw;
+    .project__card {
+      display: flex;
+      flex-direction: column;
+      margin: 0 2rem;
+      .project__info {
+        text-align: left;
+        margin: 2rem 0;
+        .project__annotation {
+          padding: 0;
+        }
       }
     }
   }
