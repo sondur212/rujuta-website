@@ -20,9 +20,10 @@
 
 .memphis-gif-wrap {
   margin-top: 4rem;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
   img {
-    width: 40vw;
+    width: auto;
+    grid-column: 2/3;
   }
 }

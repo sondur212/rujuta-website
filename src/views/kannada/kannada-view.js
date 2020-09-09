@@ -5,7 +5,7 @@ import kannadamov from './../../../assets/videos/kannada-prototype.mov';
 
 const KannadaView = () => {
   return (
-    <div style={{ paddingTop: '120px' }}>
+    <div className="kannada-view">
       <div className="kannada-view-wrapper">
         <img
           className="kannada-image-content"
