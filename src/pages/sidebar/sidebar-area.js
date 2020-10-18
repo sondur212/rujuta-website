@@ -12,6 +12,8 @@ import ResumeView from '../../views/resume/resume-view';
 import MagazineView from '../../views/magazine/magazine-view';
 import MemphisView from '../../views/memphis/memphis-view';
 import AryaView from '../../views/arya/arya-view';
+import LayoutView from '../../views/layout/layout-view';
+import ForceChartView from '../../views/force-chart/forcechart-view';
 
 export function pageRoutes() {
   return [
@@ -23,6 +25,8 @@ export function pageRoutes() {
     ViewRoute(ExpressiveView),
     ViewRoute(MemphisView),
     ViewRoute(AryaView),
+    ViewRoute(LayoutView),
+    ViewRoute(ForceChartView),
   ];
 }
 
