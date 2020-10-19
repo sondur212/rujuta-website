@@ -206,7 +206,7 @@ const ForceChartView = () => {
 
     node
       .append('circle')
-      .attr('r', 5)
+      .attr('r', (d) => d.group + 4)
       .attr('fill', function (d) {
         return color(d.group);
       })
@@ -237,7 +237,7 @@ const ForceChartView = () => {
       node
         .append('circle')
         .attr('fill', (d) => color(d.group))
-        .attr('r', 5)
+        .attr('r', (d) => d.group + 4)
         .call(
           d3
             .drag()
