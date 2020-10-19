@@ -192,9 +192,7 @@ const ForceChartView = () => {
       .data(dataf.links)
       .enter()
       .append('line')
-      .attr('stroke-width', function (d) {
-        return Math.sqrt(d.value);
-      });
+      .attr('stroke-width', 1.5);
 
     let node = svg
       .append('g')
@@ -259,7 +257,7 @@ const ForceChartView = () => {
         return d.source.id + '-' + d.target.id;
       });
       link.exit().remove();
-      link = link.enter().append('line').merge(link);
+      link = link.enter().append('line').attr('stroke-width', 1.5).merge(link);
 
       // Update and restart the simulation.
       simulation.nodes(dataf.nodes);
